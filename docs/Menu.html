@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Menu</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Menu</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Cmega%5Cmega%20saves%5Cuniversity%5Cprojects%5Cpython%20object%20oriented%20and%20functional%20programming%5Cprogram%5Cmenu.py">d:\mega\mega saves\university\projects\python object oriented and functional programming\program\menu.py</a></font></td></tr></table>
+    <p><tt>This&nbsp;file&nbsp;contains&nbsp;information&nbsp;about&nbsp;the&nbsp;displayable&nbsp;menus&nbsp;of&nbsp;the&nbsp;application,&nbsp;some&nbsp;menus&nbsp;require&nbsp;custom&nbsp;driver&nbsp;code,&nbsp;thus&nbsp;they&nbsp;were&nbsp;redefined&nbsp;as&nbsp;a&nbsp;subclass&nbsp;with&nbsp;added&nbsp;functionality.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="HabitManager.html">HabitManager</a><br>
+</td><td width="25%" valign=top><a href="curses.html">curses</a><br>
+</td><td width="25%" valign=top><a href="math.html">math</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="Menu.html#Menu">Menu</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="Menu.html#SimpleMenu">SimpleMenu</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="Menu.html#AttributeMenu">AttributeMenu</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="Menu.html#NewAttributeMenu">NewAttributeMenu</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="Menu.html#InputMenu">InputMenu</a>
+</font></dt><dt><font face="helvetica, arial"><a href="Menu.html#ListMenu">ListMenu</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="Menu.html#AlterHabits">AlterHabits</a>
+</font></dt><dt><font face="helvetica, arial"><a href="Menu.html#NotificationsMenu">NotificationsMenu</a>
+</font></dt><dt><font face="helvetica, arial"><a href="Menu.html#PendingListMenu">PendingListMenu</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="Menu.html#MainMenu">MainMenu</a>
+</font></dt><dt><font face="helvetica, arial"><a href="Menu.html#TaskMenu">TaskMenu</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="AlterHabits">class <strong>AlterHabits</strong></a>(<a href="Menu.html#ListMenu">ListMenu</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#AlterHabits">AlterHabits</a>(data)<br>
+&nbsp;<br>
+This&nbsp;class&nbsp;is&nbsp;used&nbsp;to&nbsp;allow&nbsp;the&nbsp;tasks&nbsp;to&nbsp;be&nbsp;deleted&nbsp;from&nbsp;this.tasks&nbsp;and&nbsp;have&nbsp;this.data&nbsp;match&nbsp;that&nbsp;behaviour.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="Menu.html#AlterHabits">AlterHabits</a></dd>
+<dd><a href="Menu.html#ListMenu">ListMenu</a></dd>
+<dd><a href="Menu.html#SimpleMenu">SimpleMenu</a></dd>
+<dd><a href="Menu.html#Menu">Menu</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="AlterHabits-fromBack"><strong>fromBack</strong></a>(this, value)</dt><dd><tt>Refresh&nbsp;this.data&nbsp;to&nbsp;match&nbsp;with&nbsp;this.tasks.<br>
+Calls&nbsp;super().<a href="#AlterHabits-fromBack">fromBack</a>(value)</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="Menu.html#ListMenu">ListMenu</a>:<br>
+<dl><dt><a name="AlterHabits-__init__"><strong>__init__</strong></a>(this, data)</dt><dd><tt>Calls&nbsp;super().<a href="#AlterHabits-__init__">__init__</a>().<br>
+Assigns&nbsp;data&nbsp;to&nbsp;this.data&nbsp;list&nbsp;of&nbsp;lists&nbsp;in&nbsp;the&nbsp;form&nbsp;of&nbsp;[display&nbsp;text,&nbsp;function&nbsp;pointer,&nbsp;args]&nbsp;it&nbsp;is&nbsp;used&nbsp;as&nbsp;the&nbsp;selectible&nbsp;display&nbsp;data.<br>
+Creates&nbsp;this.tasks&nbsp;list,&nbsp;which&nbsp;can&nbsp;be&nbsp;used&nbsp;for&nbsp;holding&nbsp;the&nbsp;tasks&nbsp;array&nbsp;(Data&nbsp;is&nbsp;filled,&nbsp;this&nbsp;can&nbsp;be&nbsp;skipped,&nbsp;otherwise&nbsp;it&nbsp;is&nbsp;used&nbsp;as&nbsp;data[0]&nbsp;(display&nbsp;text)).<br>
+Creates&nbsp;this.listPointer&nbsp;integer&nbsp;shows&nbsp;which&nbsp;screen&nbsp;we&nbsp;are&nbsp;on.<br>
+Creates&nbsp;this.clearScreen&nbsp;boolean,&nbsp;it&nbsp;requests&nbsp;a&nbsp;screen&nbsp;clear.</tt></dd></dl>
+
+<dl><dt><a name="AlterHabits-cycleListDown"><strong>cycleListDown</strong></a>(this)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;used&nbsp;mainly&nbsp;as&nbsp;a&nbsp;function&nbsp;pointer&nbsp;used&nbsp;for&nbsp;this.functions&nbsp;list.<br>
+Decrements&nbsp;this.listPointer&nbsp;by&nbsp;one.<br>
+Calls&nbsp;this.<a href="#AlterHabits-load">load</a>()</tt></dd></dl>
+
+<dl><dt><a name="AlterHabits-cycleListUp"><strong>cycleListUp</strong></a>(this)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;used&nbsp;mainly&nbsp;as&nbsp;a&nbsp;function&nbsp;pointer&nbsp;used&nbsp;for&nbsp;this.functions&nbsp;list.<br>
+Increments&nbsp;this.listPointer&nbsp;by&nbsp;one.<br>
+Calls&nbsp;this.<a href="#AlterHabits-load">load</a>()</tt></dd></dl>
+
+<dl><dt><a name="AlterHabits-load"><strong>load</strong></a>(this)</dt><dd><tt>Requests&nbsp;screen&nbsp;clear.<br>
+Resets&nbsp;this.menuPointer&nbsp;to&nbsp;0.<br>
+If&nbsp;possible&nbsp;fills&nbsp;data&nbsp;with&nbsp;names&nbsp;from&nbsp;task.<br>
+Fills&nbsp;functions&nbsp;from&nbsp;data&nbsp;to&nbsp;create&nbsp;the&nbsp;displayed&nbsp;list.&nbsp;10&nbsp;elements&nbsp;of&nbsp;data&nbsp;is&nbsp;used&nbsp;for&nbsp;one&nbsp;page.</tt></dd></dl>
+
+<dl><dt><a name="AlterHabits-show"><strong>show</strong></a>(this, screen)</dt><dd><tt>Provides&nbsp;am&nbsp;option&nbsp;to&nbsp;clear&nbsp;screen.<br>
+Calls&nbsp;super().<a href="#AlterHabits-show">show</a>(screen)</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="Menu.html#SimpleMenu">SimpleMenu</a>:<br>
+<dl><dt><a name="AlterHabits-update"><strong>update</strong></a>(this, character)</dt><dd><tt>Handles&nbsp;simple&nbsp;menu&nbsp;navigation.&nbsp;Provides&nbsp;support&nbsp;for&nbsp;up&nbsp;and&nbsp;down&nbsp;arrow&nbsp;keys&nbsp;and&nbsp;the&nbsp;enter&nbsp;key.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="Menu.html#Menu">Menu</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="AttributeMenu">class <strong>AttributeMenu</strong></a>(<a href="Menu.html#SimpleMenu">SimpleMenu</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Special&nbsp;menu&nbsp;for&nbsp;displaying&nbsp;Attributes&nbsp;of&nbsp;a&nbsp;task.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="Menu.html#AttributeMenu">AttributeMenu</a></dd>
+<dd><a href="Menu.html#SimpleMenu">SimpleMenu</a></dd>
+<dd><a href="Menu.html#Menu">Menu</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="AttributeMenu-__init__"><strong>__init__</strong></a>(this)</dt><dd><tt>Calls&nbsp;super().<a href="#AttributeMenu-__init__">__init__</a>()<br>
+Defines&nbsp;this.task,&nbsp;will&nbsp;hold&nbsp;the&nbsp;current&nbsp;data.<br>
+Defines&nbsp;this.saved&nbsp;is&nbsp;used&nbsp;to&nbsp;signal&nbsp;the&nbsp;user&nbsp;if&nbsp;the&nbsp;data&nbsp;is&nbsp;saved.<br>
+Defines&nbsp;this.requestClear,&nbsp;used&nbsp;to&nbsp;signal&nbsp;that&nbsp;the&nbsp;screen&nbsp;needs&nbsp;a&nbsp;full&nbsp;clear.</tt></dd></dl>
+
+<dl><dt><a name="AttributeMenu-fromBack"><strong>fromBack</strong></a>(this, value)</dt><dd><tt>Called&nbsp;when&nbsp;coming&nbsp;back&nbsp;from&nbsp;the&nbsp;next&nbsp;menu.<br>
+Stores&nbsp;value&nbsp;in&nbsp;the&nbsp;respective&nbsp;temporary&nbsp;attribute.</tt></dd></dl>
+
+<dl><dt><a name="AttributeMenu-load"><strong>load</strong></a>(this)</dt><dd><tt>Adds&nbsp;Save&nbsp;function&nbsp;to&nbsp;the&nbsp;functions&nbsp;list.<br>
+Sets&nbsp;this.tempName&nbsp;as&nbsp;the&nbsp;name&nbsp;of&nbsp;this.task<br>
+Sets&nbsp;this.tempDescription&nbsp;as&nbsp;the&nbsp;description&nbsp;of&nbsp;this.task<br>
+Sets&nbsp;this.tempDeadline&nbsp;as&nbsp;the&nbsp;deadline&nbsp;of&nbsp;this.task<br>
+Sets&nbsp;this.tempPeriodicity&nbsp;as&nbsp;the&nbsp;periodicity&nbsp;of&nbsp;this.task<br>
+Calls&nbsp;this.<a href="#AttributeMenu-refreshText">refreshText</a>()</tt></dd></dl>
+
+<dl><dt><a name="AttributeMenu-refreshText"><strong>refreshText</strong></a>(this)</dt><dd><tt>Fills&nbsp;the&nbsp;functions&nbsp;list&nbsp;with&nbsp;the&nbsp;respective&nbsp;content&nbsp;to&nbsp;fill&nbsp;the&nbsp;page&nbsp;with&nbsp;relative&nbsp;data.</tt></dd></dl>
+
+<dl><dt><a name="AttributeMenu-save"><strong>save</strong></a>(this)</dt><dd><tt>Sets&nbsp;task&nbsp;attributes&nbsp;as&nbsp;the&nbsp;temporary&nbsp;attributes.<br>
+Request&nbsp;clear.<br>
+Marks&nbsp;the&nbsp;content&nbsp;as&nbsp;saved.<br>
+Calls&nbsp;this.<a href="#AttributeMenu-refreshText">refreshText</a>()</tt></dd></dl>
+
+<dl><dt><a name="AttributeMenu-show"><strong>show</strong></a>(this, screen)</dt><dd><tt>Allows&nbsp;the&nbsp;screen&nbsp;to&nbsp;be&nbsp;cleared.<br>
+Calls&nbsp;super().<a href="#AttributeMenu-show">show</a>(screen)</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="Menu.html#SimpleMenu">SimpleMenu</a>:<br>
+<dl><dt><a name="AttributeMenu-update"><strong>update</strong></a>(this, character)</dt><dd><tt>Handles&nbsp;simple&nbsp;menu&nbsp;navigation.&nbsp;Provides&nbsp;support&nbsp;for&nbsp;up&nbsp;and&nbsp;down&nbsp;arrow&nbsp;keys&nbsp;and&nbsp;the&nbsp;enter&nbsp;key.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="Menu.html#Menu">Menu</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="InputMenu">class <strong>InputMenu</strong></a>(<a href="Menu.html#SimpleMenu">SimpleMenu</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Special&nbsp;menu&nbsp;to&nbsp;record&nbsp;all&nbsp;inputs&nbsp;made&nbsp;on&nbsp;the&nbsp;keyboard,&nbsp;and&nbsp;use&nbsp;some&nbsp;of&nbsp;it&nbsp;to&nbsp;allow&nbsp;the&nbsp;user&nbsp;to&nbsp;input&nbsp;data&nbsp;into&nbsp;the&nbsp;software.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="Menu.html#InputMenu">InputMenu</a></dd>
+<dd><a href="Menu.html#SimpleMenu">SimpleMenu</a></dd>
+<dd><a href="Menu.html#Menu">Menu</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="InputMenu-__init__"><strong>__init__</strong></a>(this)</dt><dd><tt>Calls&nbsp;super().<a href="#InputMenu-__init__">__init__</a>().<br>
+Sets&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;menu&nbsp;as&nbsp;Input.<br>
+Defines&nbsp;this.text.&nbsp;Which&nbsp;will&nbsp;be&nbsp;used&nbsp;as&nbsp;a&nbsp;temporal&nbsp;holder&nbsp;to&nbsp;the&nbsp;textual&nbsp;data.<br>
+Defines&nbsp;this.textPointer,&nbsp;which&nbsp;will&nbsp;mark&nbsp;the&nbsp;current&nbsp;position&nbsp;of&nbsp;the&nbsp;cursor.<br>
+Defines&nbsp;this.requestClear&nbsp;to&nbsp;request&nbsp;screen&nbsp;clearing.</tt></dd></dl>
+
+<dl><dt><a name="InputMenu-load"><strong>load</strong></a>(this)</dt><dd><tt>Sets&nbsp;this.textPointer&nbsp;to&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;text.</tt></dd></dl>
+
+<dl><dt><a name="InputMenu-show"><strong>show</strong></a>(this, screen)</dt><dd><tt>Clears&nbsp;the&nbsp;screen&nbsp;if&nbsp;needed.<br>
+Calls&nbsp;super().<a href="#InputMenu-show">show</a>(screen).<br>
+Display&nbsp;this.text&nbsp;on&nbsp;the&nbsp;screen,&nbsp;along&nbsp;with&nbsp;the&nbsp;cursor.</tt></dd></dl>
+
+<dl><dt><a name="InputMenu-update"><strong>update</strong></a>(this, character)</dt><dd><tt>Handles&nbsp;key&nbsp;inputs&nbsp;like&nbsp;backspace,&nbsp;cursor&nbsp;movement&nbsp;using&nbsp;the&nbsp;left&nbsp;and&nbsp;right&nbsp;key,&nbsp;delete,&nbsp;enter&nbsp;and&nbsp;appends&nbsp;all&nbsp;the&nbsp;pressed&nbsp;keys&nbsp;to&nbsp;the&nbsp;cursors&nbsp;location&nbsp;in&nbsp;this.text.<br>
+Calls&nbsp;super().<a href="#InputMenu-update">update</a>(charater)</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="Menu.html#Menu">Menu</a>:<br>
+<dl><dt><a name="InputMenu-fromBack"><strong>fromBack</strong></a>(this, value)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;called&nbsp;when&nbsp;a&nbsp;submenu&nbsp;is&nbsp;exited&nbsp;and&nbsp;the&nbsp;fucos&nbsp;is&nbsp;returned&nbsp;to&nbsp;this&nbsp;menu.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="Menu.html#Menu">Menu</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ListMenu">class <strong>ListMenu</strong></a>(<a href="Menu.html#SimpleMenu">SimpleMenu</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#ListMenu">ListMenu</a>(data)<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;a&nbsp;subclass&nbsp;of&nbsp;<a href="#SimpleMenu">SimpleMenu</a>&nbsp;providing&nbsp;support&nbsp;for&nbsp;list&nbsp;based&nbsp;menus&nbsp;(example:&nbsp;list&nbsp;of&nbsp;habits).<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="Menu.html#ListMenu">ListMenu</a></dd>
+<dd><a href="Menu.html#SimpleMenu">SimpleMenu</a></dd>
+<dd><a href="Menu.html#Menu">Menu</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ListMenu-__init__"><strong>__init__</strong></a>(this, data)</dt><dd><tt>Calls&nbsp;super().<a href="#ListMenu-__init__">__init__</a>().<br>
+Assigns&nbsp;data&nbsp;to&nbsp;this.data&nbsp;list&nbsp;of&nbsp;lists&nbsp;in&nbsp;the&nbsp;form&nbsp;of&nbsp;[display&nbsp;text,&nbsp;function&nbsp;pointer,&nbsp;args]&nbsp;it&nbsp;is&nbsp;used&nbsp;as&nbsp;the&nbsp;selectible&nbsp;display&nbsp;data.<br>
+Creates&nbsp;this.tasks&nbsp;list,&nbsp;which&nbsp;can&nbsp;be&nbsp;used&nbsp;for&nbsp;holding&nbsp;the&nbsp;tasks&nbsp;array&nbsp;(Data&nbsp;is&nbsp;filled,&nbsp;this&nbsp;can&nbsp;be&nbsp;skipped,&nbsp;otherwise&nbsp;it&nbsp;is&nbsp;used&nbsp;as&nbsp;data[0]&nbsp;(display&nbsp;text)).<br>
+Creates&nbsp;this.listPointer&nbsp;integer&nbsp;shows&nbsp;which&nbsp;screen&nbsp;we&nbsp;are&nbsp;on.<br>
+Creates&nbsp;this.clearScreen&nbsp;boolean,&nbsp;it&nbsp;requests&nbsp;a&nbsp;screen&nbsp;clear.</tt></dd></dl>
+
+<dl><dt><a name="ListMenu-cycleListDown"><strong>cycleListDown</strong></a>(this)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;used&nbsp;mainly&nbsp;as&nbsp;a&nbsp;function&nbsp;pointer&nbsp;used&nbsp;for&nbsp;this.functions&nbsp;list.<br>
+Decrements&nbsp;this.listPointer&nbsp;by&nbsp;one.<br>
+Calls&nbsp;this.<a href="#ListMenu-load">load</a>()</tt></dd></dl>
+
+<dl><dt><a name="ListMenu-cycleListUp"><strong>cycleListUp</strong></a>(this)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;used&nbsp;mainly&nbsp;as&nbsp;a&nbsp;function&nbsp;pointer&nbsp;used&nbsp;for&nbsp;this.functions&nbsp;list.<br>
+Increments&nbsp;this.listPointer&nbsp;by&nbsp;one.<br>
+Calls&nbsp;this.<a href="#ListMenu-load">load</a>()</tt></dd></dl>
+
+<dl><dt><a name="ListMenu-fromBack"><strong>fromBack</strong></a>(this, data)</dt><dd><tt>Called&nbsp;when&nbsp;the&nbsp;display&nbsp;returns&nbsp;to&nbsp;this&nbsp;menu.<br>
+Calls&nbsp;this.<a href="#ListMenu-load">load</a>()</tt></dd></dl>
+
+<dl><dt><a name="ListMenu-load"><strong>load</strong></a>(this)</dt><dd><tt>Requests&nbsp;screen&nbsp;clear.<br>
+Resets&nbsp;this.menuPointer&nbsp;to&nbsp;0.<br>
+If&nbsp;possible&nbsp;fills&nbsp;data&nbsp;with&nbsp;names&nbsp;from&nbsp;task.<br>
+Fills&nbsp;functions&nbsp;from&nbsp;data&nbsp;to&nbsp;create&nbsp;the&nbsp;displayed&nbsp;list.&nbsp;10&nbsp;elements&nbsp;of&nbsp;data&nbsp;is&nbsp;used&nbsp;for&nbsp;one&nbsp;page.</tt></dd></dl>
+
+<dl><dt><a name="ListMenu-show"><strong>show</strong></a>(this, screen)</dt><dd><tt>Provides&nbsp;am&nbsp;option&nbsp;to&nbsp;clear&nbsp;screen.<br>
+Calls&nbsp;super().<a href="#ListMenu-show">show</a>(screen)</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="Menu.html#SimpleMenu">SimpleMenu</a>:<br>
+<dl><dt><a name="ListMenu-update"><strong>update</strong></a>(this, character)</dt><dd><tt>Handles&nbsp;simple&nbsp;menu&nbsp;navigation.&nbsp;Provides&nbsp;support&nbsp;for&nbsp;up&nbsp;and&nbsp;down&nbsp;arrow&nbsp;keys&nbsp;and&nbsp;the&nbsp;enter&nbsp;key.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="Menu.html#Menu">Menu</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MainMenu">class <strong>MainMenu</strong></a>(<a href="Menu.html#SimpleMenu">SimpleMenu</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#MainMenu">MainMenu</a>(data)<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;a&nbsp;subclass&nbsp;of&nbsp;<a href="#SimpleMenu">SimpleMenu</a>&nbsp;providing&nbsp;live&nbsp;update&nbsp;to&nbsp;the&nbsp;notification&nbsp;counter&nbsp;in&nbsp;the&nbsp;main&nbsp;menu.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="Menu.html#MainMenu">MainMenu</a></dd>
+<dd><a href="Menu.html#SimpleMenu">SimpleMenu</a></dd>
+<dd><a href="Menu.html#Menu">Menu</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="MainMenu-__init__"><strong>__init__</strong></a>(this, data)</dt><dd><tt>Adds&nbsp;data&nbsp;into&nbsp;the&nbsp;this.data<br>
+Calls&nbsp;super().<a href="#MainMenu-__init__">__init__</a>()</tt></dd></dl>
+
+<dl><dt><a name="MainMenu-show"><strong>show</strong></a>(this, screen)</dt><dd><tt>Shows&nbsp;the&nbsp;notification&nbsp;count&nbsp;as&nbsp;well.<br>
+Calls&nbsp;super().<a href="#MainMenu-show">show</a>(screen)</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="Menu.html#SimpleMenu">SimpleMenu</a>:<br>
+<dl><dt><a name="MainMenu-update"><strong>update</strong></a>(this, character)</dt><dd><tt>Handles&nbsp;simple&nbsp;menu&nbsp;navigation.&nbsp;Provides&nbsp;support&nbsp;for&nbsp;up&nbsp;and&nbsp;down&nbsp;arrow&nbsp;keys&nbsp;and&nbsp;the&nbsp;enter&nbsp;key.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="Menu.html#Menu">Menu</a>:<br>
+<dl><dt><a name="MainMenu-fromBack"><strong>fromBack</strong></a>(this, value)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;called&nbsp;when&nbsp;a&nbsp;submenu&nbsp;is&nbsp;exited&nbsp;and&nbsp;the&nbsp;fucos&nbsp;is&nbsp;returned&nbsp;to&nbsp;this&nbsp;menu.</tt></dd></dl>
+
+<dl><dt><a name="MainMenu-load"><strong>load</strong></a>(this)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;called&nbsp;when&nbsp;the&nbsp;menu&nbsp;is&nbsp;first&nbsp;loaded&nbsp;into&nbsp;the&nbsp;display&nbsp;manager.&nbsp;Can&nbsp;be&nbsp;overwritten&nbsp;to&nbsp;add&nbsp;more&nbsp;functionality.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="Menu.html#Menu">Menu</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Menu">class <strong>Menu</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;is&nbsp;a&nbsp;class&nbsp;that&nbsp;contains&nbsp;the&nbsp;data&nbsp;and&nbsp;the&nbsp;functionality&nbsp;of&nbsp;a&nbsp;<a href="#Menu">Menu</a>&nbsp;that&nbsp;can&nbsp;be&nbsp;displayed&nbsp;by&nbsp;the&nbsp;DisplayManager&nbsp;class.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Menu-__init__"><strong>__init__</strong></a>(this)</dt><dd><tt>name:&nbsp;This&nbsp;is&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;<a href="#Menu">Menu</a>&nbsp;displayed&nbsp;on&nbsp;the&nbsp;top&nbsp;of&nbsp;the&nbsp;screen.<br>
+menuPointer:&nbsp;This&nbsp;is&nbsp;an&nbsp;integer&nbsp;that&nbsp;represents&nbsp;the&nbsp;currently&nbsp;selected&nbsp;option.<br>
+display:&nbsp;This&nbsp;is&nbsp;a&nbsp;list&nbsp;of&nbsp;tuples&nbsp;in&nbsp;the&nbsp;form&nbsp;of&nbsp;(row,&nbsp;column,&nbsp;dataID)&nbsp;that&nbsp;will&nbsp;draw&nbsp;the&nbsp;content&nbsp;of&nbsp;data&nbsp;at&nbsp;dataID&nbsp;at&nbsp;row,column.<br>
+data:&nbsp;A&nbsp;list&nbsp;of&nbsp;strings&nbsp;that&nbsp;can&nbsp;be&nbsp;modified&nbsp;or&nbsp;written&nbsp;on&nbsp;the&nbsp;screen.<br>
+functions:&nbsp;A&nbsp;list&nbsp;of&nbsp;tuples&nbsp;in&nbsp;the&nbsp;form&nbsp;of&nbsp;("DisplayText",function,arg)&nbsp;where&nbsp;the&nbsp;"DisplayText"&nbsp;will&nbsp;be&nbsp;written&nbsp;to&nbsp;the&nbsp;screen&nbsp;as&nbsp;an&nbsp;option,&nbsp;the&nbsp;function&nbsp;will&nbsp;be&nbsp;called&nbsp;with&nbsp;the&nbsp;argument&nbsp;of&nbsp;arg&nbsp;when&nbsp;the&nbsp;user&nbsp;selects&nbsp;it.</tt></dd></dl>
+
+<dl><dt><a name="Menu-fromBack"><strong>fromBack</strong></a>(this, value)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;called&nbsp;when&nbsp;a&nbsp;submenu&nbsp;is&nbsp;exited&nbsp;and&nbsp;the&nbsp;fucos&nbsp;is&nbsp;returned&nbsp;to&nbsp;this&nbsp;menu.</tt></dd></dl>
+
+<dl><dt><a name="Menu-load"><strong>load</strong></a>(this)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;called&nbsp;when&nbsp;the&nbsp;menu&nbsp;is&nbsp;first&nbsp;loaded&nbsp;into&nbsp;the&nbsp;display&nbsp;manager.&nbsp;Can&nbsp;be&nbsp;overwritten&nbsp;to&nbsp;add&nbsp;more&nbsp;functionality.</tt></dd></dl>
+
+<dl><dt><a name="Menu-show"><strong>show</strong></a>(this, screen)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;called&nbsp;every&nbsp;frame&nbsp;of&nbsp;the&nbsp;application,&nbsp;and&nbsp;is&nbsp;to&nbsp;be&nbsp;used&nbsp;as&nbsp;a&nbsp;driver&nbsp;for&nbsp;the&nbsp;graphics&nbsp;in&nbsp;the&nbsp;current&nbsp;<a href="#Menu">Menu</a>.</tt></dd></dl>
+
+<dl><dt><a name="Menu-update"><strong>update</strong></a>(this, character)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;called&nbsp;every&nbsp;frame&nbsp;of&nbsp;the&nbsp;application,&nbsp;and&nbsp;is&nbsp;to&nbsp;be&nbsp;used&nbsp;to&nbsp;handle&nbsp;the&nbsp;inputs&nbsp;of&nbsp;the&nbsp;current&nbsp;visible&nbsp;<a href="#Menu">Menu</a>.&nbsp;Can&nbsp;be&nbsp;overwritten&nbsp;to&nbsp;add&nbsp;further&nbsp;functionality.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="NewAttributeMenu">class <strong>NewAttributeMenu</strong></a>(<a href="Menu.html#AttributeMenu">AttributeMenu</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Functions&nbsp;close&nbsp;to&nbsp;<a href="#AttributeMenu">AttributeMenu</a>,&nbsp;but&nbsp;it&nbsp;saves&nbsp;every&nbsp;change&nbsp;constantly,&nbsp;since&nbsp;a&nbsp;new&nbsp;task&nbsp;cannot&nbsp;be&nbsp;reverted&nbsp;to&nbsp;the&nbsp;previous&nbsp;state.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="Menu.html#NewAttributeMenu">NewAttributeMenu</a></dd>
+<dd><a href="Menu.html#AttributeMenu">AttributeMenu</a></dd>
+<dd><a href="Menu.html#SimpleMenu">SimpleMenu</a></dd>
+<dd><a href="Menu.html#Menu">Menu</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="NewAttributeMenu-fromBack"><strong>fromBack</strong></a>(this, value)</dt><dd><tt>Called&nbsp;when&nbsp;returning&nbsp;from&nbsp;the&nbsp;next&nbsp;menu.<br>
+Loads&nbsp;value&nbsp;into&nbsp;the&nbsp;respective&nbsp;task&nbsp;attribute.</tt></dd></dl>
+
+<dl><dt><a name="NewAttributeMenu-load"><strong>load</strong></a>(this)</dt><dd><tt>Same&nbsp;as&nbsp;super().<a href="#NewAttributeMenu-load">load</a>(),&nbsp;but&nbsp;removes&nbsp;the&nbsp;added&nbsp;save&nbsp;option.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="Menu.html#AttributeMenu">AttributeMenu</a>:<br>
+<dl><dt><a name="NewAttributeMenu-__init__"><strong>__init__</strong></a>(this)</dt><dd><tt>Calls&nbsp;super().<a href="#NewAttributeMenu-__init__">__init__</a>()<br>
+Defines&nbsp;this.task,&nbsp;will&nbsp;hold&nbsp;the&nbsp;current&nbsp;data.<br>
+Defines&nbsp;this.saved&nbsp;is&nbsp;used&nbsp;to&nbsp;signal&nbsp;the&nbsp;user&nbsp;if&nbsp;the&nbsp;data&nbsp;is&nbsp;saved.<br>
+Defines&nbsp;this.requestClear,&nbsp;used&nbsp;to&nbsp;signal&nbsp;that&nbsp;the&nbsp;screen&nbsp;needs&nbsp;a&nbsp;full&nbsp;clear.</tt></dd></dl>
+
+<dl><dt><a name="NewAttributeMenu-refreshText"><strong>refreshText</strong></a>(this)</dt><dd><tt>Fills&nbsp;the&nbsp;functions&nbsp;list&nbsp;with&nbsp;the&nbsp;respective&nbsp;content&nbsp;to&nbsp;fill&nbsp;the&nbsp;page&nbsp;with&nbsp;relative&nbsp;data.</tt></dd></dl>
+
+<dl><dt><a name="NewAttributeMenu-save"><strong>save</strong></a>(this)</dt><dd><tt>Sets&nbsp;task&nbsp;attributes&nbsp;as&nbsp;the&nbsp;temporary&nbsp;attributes.<br>
+Request&nbsp;clear.<br>
+Marks&nbsp;the&nbsp;content&nbsp;as&nbsp;saved.<br>
+Calls&nbsp;this.<a href="#NewAttributeMenu-refreshText">refreshText</a>()</tt></dd></dl>
+
+<dl><dt><a name="NewAttributeMenu-show"><strong>show</strong></a>(this, screen)</dt><dd><tt>Allows&nbsp;the&nbsp;screen&nbsp;to&nbsp;be&nbsp;cleared.<br>
+Calls&nbsp;super().<a href="#NewAttributeMenu-show">show</a>(screen)</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="Menu.html#SimpleMenu">SimpleMenu</a>:<br>
+<dl><dt><a name="NewAttributeMenu-update"><strong>update</strong></a>(this, character)</dt><dd><tt>Handles&nbsp;simple&nbsp;menu&nbsp;navigation.&nbsp;Provides&nbsp;support&nbsp;for&nbsp;up&nbsp;and&nbsp;down&nbsp;arrow&nbsp;keys&nbsp;and&nbsp;the&nbsp;enter&nbsp;key.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="Menu.html#Menu">Menu</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="NotificationsMenu">class <strong>NotificationsMenu</strong></a>(<a href="Menu.html#ListMenu">ListMenu</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#NotificationsMenu">NotificationsMenu</a>(notifications)<br>
+&nbsp;<br>
+Notifications&nbsp;menu&nbsp;were&nbsp;created&nbsp;to&nbsp;display&nbsp;notifications.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="Menu.html#NotificationsMenu">NotificationsMenu</a></dd>
+<dd><a href="Menu.html#ListMenu">ListMenu</a></dd>
+<dd><a href="Menu.html#SimpleMenu">SimpleMenu</a></dd>
+<dd><a href="Menu.html#Menu">Menu</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="NotificationsMenu-__init__"><strong>__init__</strong></a>(this, notifications)</dt><dd><tt>Creates&nbsp;this.notifications,&nbsp;which&nbsp;holds&nbsp;the&nbsp;passed&nbsp;in&nbsp;notifications&nbsp;list.<br>
+Calls&nbsp;super().<a href="#NotificationsMenu-__init__">__init__</a>(data)&nbsp;with&nbsp;data&nbsp;as&nbsp;a&nbsp;list&nbsp;of&nbsp;[notification,None,None]</tt></dd></dl>
+
+<dl><dt><a name="NotificationsMenu-load"><strong>load</strong></a>(this)</dt><dd><tt>Calls&nbsp;super().<a href="#NotificationsMenu-load">load</a>().<br>
+Adds&nbsp;Remove&nbsp;all&nbsp;notifications&nbsp;button.</tt></dd></dl>
+
+<dl><dt><a name="NotificationsMenu-removeAll"><strong>removeAll</strong></a>(this)</dt><dd><tt>Removes&nbsp;all&nbsp;notifications&nbsp;from&nbsp;the&nbsp;notifications&nbsp;list.</tt></dd></dl>
+
+<dl><dt><a name="NotificationsMenu-update"><strong>update</strong></a>(this, character)</dt><dd><tt>Handles&nbsp;simple&nbsp;menu&nbsp;navigation.&nbsp;Provides&nbsp;support&nbsp;for&nbsp;up&nbsp;and&nbsp;down&nbsp;arrow&nbsp;keys&nbsp;and&nbsp;the&nbsp;enter&nbsp;key.<br>
+Allows&nbsp;the&nbsp;removal&nbsp;of&nbsp;items&nbsp;in&nbsp;the&nbsp;notifications&nbsp;list.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="Menu.html#ListMenu">ListMenu</a>:<br>
+<dl><dt><a name="NotificationsMenu-cycleListDown"><strong>cycleListDown</strong></a>(this)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;used&nbsp;mainly&nbsp;as&nbsp;a&nbsp;function&nbsp;pointer&nbsp;used&nbsp;for&nbsp;this.functions&nbsp;list.<br>
+Decrements&nbsp;this.listPointer&nbsp;by&nbsp;one.<br>
+Calls&nbsp;this.<a href="#NotificationsMenu-load">load</a>()</tt></dd></dl>
+
+<dl><dt><a name="NotificationsMenu-cycleListUp"><strong>cycleListUp</strong></a>(this)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;used&nbsp;mainly&nbsp;as&nbsp;a&nbsp;function&nbsp;pointer&nbsp;used&nbsp;for&nbsp;this.functions&nbsp;list.<br>
+Increments&nbsp;this.listPointer&nbsp;by&nbsp;one.<br>
+Calls&nbsp;this.<a href="#NotificationsMenu-load">load</a>()</tt></dd></dl>
+
+<dl><dt><a name="NotificationsMenu-fromBack"><strong>fromBack</strong></a>(this, data)</dt><dd><tt>Called&nbsp;when&nbsp;the&nbsp;display&nbsp;returns&nbsp;to&nbsp;this&nbsp;menu.<br>
+Calls&nbsp;this.<a href="#NotificationsMenu-load">load</a>()</tt></dd></dl>
+
+<dl><dt><a name="NotificationsMenu-show"><strong>show</strong></a>(this, screen)</dt><dd><tt>Provides&nbsp;am&nbsp;option&nbsp;to&nbsp;clear&nbsp;screen.<br>
+Calls&nbsp;super().<a href="#NotificationsMenu-show">show</a>(screen)</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="Menu.html#Menu">Menu</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="PendingListMenu">class <strong>PendingListMenu</strong></a>(<a href="Menu.html#ListMenu">ListMenu</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#PendingListMenu">PendingListMenu</a>(data)<br>
+&nbsp;<br>
+Special&nbsp;menu&nbsp;created&nbsp;for&nbsp;the&nbsp;Pending&nbsp;List&nbsp;<a href="#Menu">Menu</a><br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="Menu.html#PendingListMenu">PendingListMenu</a></dd>
+<dd><a href="Menu.html#ListMenu">ListMenu</a></dd>
+<dd><a href="Menu.html#SimpleMenu">SimpleMenu</a></dd>
+<dd><a href="Menu.html#Menu">Menu</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="PendingListMenu-__init__"><strong>__init__</strong></a>(this, data)</dt><dd><tt>input&nbsp;data&nbsp;is&nbsp;a&nbsp;array&nbsp;of&nbsp;arrays&nbsp;in&nbsp;the&nbsp;form&nbsp;of&nbsp;[name&nbsp;of&nbsp;task,&nbsp;function&nbsp;pointer,&nbsp;[task,&nbsp;Menus&nbsp;enum&nbsp;menuType]]<br>
+Calls&nbsp;super().<a href="#PendingListMenu-__init__">__init__</a>()&nbsp;with&nbsp;a&nbsp;list&nbsp;as&nbsp;an&nbsp;argument,&nbsp;that&nbsp;is&nbsp;filltered&nbsp;on&nbsp;the&nbsp;respective&nbsp;task&nbsp;being&nbsp;pending&nbsp;from&nbsp;data[2][0]</tt></dd></dl>
+
+<dl><dt><a name="PendingListMenu-fromBack"><strong>fromBack</strong></a>(this, value)</dt><dd><tt>Called&nbsp;when&nbsp;returning&nbsp;from&nbsp;the&nbsp;next&nbsp;menu.<br>
+Refreshes&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;displayed&nbsp;list,&nbsp;filters&nbsp;completed&nbsp;tasks.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="Menu.html#ListMenu">ListMenu</a>:<br>
+<dl><dt><a name="PendingListMenu-cycleListDown"><strong>cycleListDown</strong></a>(this)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;used&nbsp;mainly&nbsp;as&nbsp;a&nbsp;function&nbsp;pointer&nbsp;used&nbsp;for&nbsp;this.functions&nbsp;list.<br>
+Decrements&nbsp;this.listPointer&nbsp;by&nbsp;one.<br>
+Calls&nbsp;this.<a href="#PendingListMenu-load">load</a>()</tt></dd></dl>
+
+<dl><dt><a name="PendingListMenu-cycleListUp"><strong>cycleListUp</strong></a>(this)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;used&nbsp;mainly&nbsp;as&nbsp;a&nbsp;function&nbsp;pointer&nbsp;used&nbsp;for&nbsp;this.functions&nbsp;list.<br>
+Increments&nbsp;this.listPointer&nbsp;by&nbsp;one.<br>
+Calls&nbsp;this.<a href="#PendingListMenu-load">load</a>()</tt></dd></dl>
+
+<dl><dt><a name="PendingListMenu-load"><strong>load</strong></a>(this)</dt><dd><tt>Requests&nbsp;screen&nbsp;clear.<br>
+Resets&nbsp;this.menuPointer&nbsp;to&nbsp;0.<br>
+If&nbsp;possible&nbsp;fills&nbsp;data&nbsp;with&nbsp;names&nbsp;from&nbsp;task.<br>
+Fills&nbsp;functions&nbsp;from&nbsp;data&nbsp;to&nbsp;create&nbsp;the&nbsp;displayed&nbsp;list.&nbsp;10&nbsp;elements&nbsp;of&nbsp;data&nbsp;is&nbsp;used&nbsp;for&nbsp;one&nbsp;page.</tt></dd></dl>
+
+<dl><dt><a name="PendingListMenu-show"><strong>show</strong></a>(this, screen)</dt><dd><tt>Provides&nbsp;am&nbsp;option&nbsp;to&nbsp;clear&nbsp;screen.<br>
+Calls&nbsp;super().<a href="#PendingListMenu-show">show</a>(screen)</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="Menu.html#SimpleMenu">SimpleMenu</a>:<br>
+<dl><dt><a name="PendingListMenu-update"><strong>update</strong></a>(this, character)</dt><dd><tt>Handles&nbsp;simple&nbsp;menu&nbsp;navigation.&nbsp;Provides&nbsp;support&nbsp;for&nbsp;up&nbsp;and&nbsp;down&nbsp;arrow&nbsp;keys&nbsp;and&nbsp;the&nbsp;enter&nbsp;key.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="Menu.html#Menu">Menu</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="SimpleMenu">class <strong>SimpleMenu</strong></a>(<a href="Menu.html#Menu">Menu</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;is&nbsp;a&nbsp;subclass&nbsp;of&nbsp;<a href="#Menu">Menu</a>&nbsp;providing&nbsp;simple&nbsp;controls&nbsp;for&nbsp;menu&nbsp;navigation.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="Menu.html#SimpleMenu">SimpleMenu</a></dd>
+<dd><a href="Menu.html#Menu">Menu</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="SimpleMenu-show"><strong>show</strong></a>(this, screen)</dt><dd><tt>Handles&nbsp;simple&nbsp;display&nbsp;of&nbsp;the&nbsp;this.display&nbsp;and&nbsp;this.functions&nbsp;list</tt></dd></dl>
+
+<dl><dt><a name="SimpleMenu-update"><strong>update</strong></a>(this, character)</dt><dd><tt>Handles&nbsp;simple&nbsp;menu&nbsp;navigation.&nbsp;Provides&nbsp;support&nbsp;for&nbsp;up&nbsp;and&nbsp;down&nbsp;arrow&nbsp;keys&nbsp;and&nbsp;the&nbsp;enter&nbsp;key.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="Menu.html#Menu">Menu</a>:<br>
+<dl><dt><a name="SimpleMenu-__init__"><strong>__init__</strong></a>(this)</dt><dd><tt>name:&nbsp;This&nbsp;is&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;<a href="#Menu">Menu</a>&nbsp;displayed&nbsp;on&nbsp;the&nbsp;top&nbsp;of&nbsp;the&nbsp;screen.<br>
+menuPointer:&nbsp;This&nbsp;is&nbsp;an&nbsp;integer&nbsp;that&nbsp;represents&nbsp;the&nbsp;currently&nbsp;selected&nbsp;option.<br>
+display:&nbsp;This&nbsp;is&nbsp;a&nbsp;list&nbsp;of&nbsp;tuples&nbsp;in&nbsp;the&nbsp;form&nbsp;of&nbsp;(row,&nbsp;column,&nbsp;dataID)&nbsp;that&nbsp;will&nbsp;draw&nbsp;the&nbsp;content&nbsp;of&nbsp;data&nbsp;at&nbsp;dataID&nbsp;at&nbsp;row,column.<br>
+data:&nbsp;A&nbsp;list&nbsp;of&nbsp;strings&nbsp;that&nbsp;can&nbsp;be&nbsp;modified&nbsp;or&nbsp;written&nbsp;on&nbsp;the&nbsp;screen.<br>
+functions:&nbsp;A&nbsp;list&nbsp;of&nbsp;tuples&nbsp;in&nbsp;the&nbsp;form&nbsp;of&nbsp;("DisplayText",function,arg)&nbsp;where&nbsp;the&nbsp;"DisplayText"&nbsp;will&nbsp;be&nbsp;written&nbsp;to&nbsp;the&nbsp;screen&nbsp;as&nbsp;an&nbsp;option,&nbsp;the&nbsp;function&nbsp;will&nbsp;be&nbsp;called&nbsp;with&nbsp;the&nbsp;argument&nbsp;of&nbsp;arg&nbsp;when&nbsp;the&nbsp;user&nbsp;selects&nbsp;it.</tt></dd></dl>
+
+<dl><dt><a name="SimpleMenu-fromBack"><strong>fromBack</strong></a>(this, value)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;called&nbsp;when&nbsp;a&nbsp;submenu&nbsp;is&nbsp;exited&nbsp;and&nbsp;the&nbsp;fucos&nbsp;is&nbsp;returned&nbsp;to&nbsp;this&nbsp;menu.</tt></dd></dl>
+
+<dl><dt><a name="SimpleMenu-load"><strong>load</strong></a>(this)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;called&nbsp;when&nbsp;the&nbsp;menu&nbsp;is&nbsp;first&nbsp;loaded&nbsp;into&nbsp;the&nbsp;display&nbsp;manager.&nbsp;Can&nbsp;be&nbsp;overwritten&nbsp;to&nbsp;add&nbsp;more&nbsp;functionality.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="Menu.html#Menu">Menu</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TaskMenu">class <strong>TaskMenu</strong></a>(<a href="Menu.html#SimpleMenu">SimpleMenu</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;menu&nbsp;used&nbsp;for&nbsp;displaying&nbsp;peding&nbsp;tasks,&nbsp;and&nbsp;allowing&nbsp;them&nbsp;to&nbsp;be&nbsp;marked&nbsp;as&nbsp;completed.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="Menu.html#TaskMenu">TaskMenu</a></dd>
+<dd><a href="Menu.html#SimpleMenu">SimpleMenu</a></dd>
+<dd><a href="Menu.html#Menu">Menu</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="TaskMenu-__init__"><strong>__init__</strong></a>(this)</dt><dd><tt>Calls&nbsp;super().init()<br>
+Creates&nbsp;this.task&nbsp;for&nbsp;storing&nbsp;task.</tt></dd></dl>
+
+<dl><dt><a name="TaskMenu-load"><strong>load</strong></a>(this)</dt><dd><tt>Calls&nbsp;super.<a href="#TaskMenu-load">load</a>()<br>
+Adds&nbsp;mark&nbsp;as&nbsp;complete&nbsp;function.<br>
+Sets&nbsp;current&nbsp;menu&nbsp;name&nbsp;to&nbsp;the&nbsp;task&nbsp;name.</tt></dd></dl>
+
+<dl><dt><a name="TaskMenu-markComplete"><strong>markComplete</strong></a>(this)</dt><dd><tt>Marks&nbsp;current&nbsp;task&nbsp;as&nbsp;complete.<br>
+Leaves&nbsp;this&nbsp;menu.</tt></dd></dl>
+
+<dl><dt><a name="TaskMenu-show"><strong>show</strong></a>(this, screen)</dt><dd><tt>Displays&nbsp;the&nbsp;task&nbsp;description.<br>
+Displays&nbsp;the&nbsp;task&nbsp;deadline.<br>
+Displays&nbsp;the&nbsp;task&nbsp;periodicity.<br>
+Calls&nbsp;super().<a href="#TaskMenu-show">show</a>(screen)</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="Menu.html#SimpleMenu">SimpleMenu</a>:<br>
+<dl><dt><a name="TaskMenu-update"><strong>update</strong></a>(this, character)</dt><dd><tt>Handles&nbsp;simple&nbsp;menu&nbsp;navigation.&nbsp;Provides&nbsp;support&nbsp;for&nbsp;up&nbsp;and&nbsp;down&nbsp;arrow&nbsp;keys&nbsp;and&nbsp;the&nbsp;enter&nbsp;key.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="Menu.html#Menu">Menu</a>:<br>
+<dl><dt><a name="TaskMenu-fromBack"><strong>fromBack</strong></a>(this, value)</dt><dd><tt>This&nbsp;function&nbsp;is&nbsp;called&nbsp;when&nbsp;a&nbsp;submenu&nbsp;is&nbsp;exited&nbsp;and&nbsp;the&nbsp;fucos&nbsp;is&nbsp;returned&nbsp;to&nbsp;this&nbsp;menu.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="Menu.html#Menu">Menu</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>unitTable</strong> = [('day(s)', 86400), ('hour(s)', 3600), ('minute(s)', 60), ('second(s)', 1)]</td></tr></table>
+</body></html>

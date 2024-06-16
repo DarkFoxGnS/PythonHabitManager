@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module DisplayManager</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>DisplayManager</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:d%3A%5Cmega%5Cmega%20saves%5Cuniversity%5Cprojects%5Cpython%20object%20oriented%20and%20functional%20programming%5Cprogram%5Cdisplaymanager.py">d:\mega\mega saves\university\projects\python object oriented and functional programming\program\displaymanager.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="curses.html">curses</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="DisplayManager.html#DisplayManager">DisplayManager</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="DisplayManager">class <strong>DisplayManager</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#DisplayManager">DisplayManager</a>(screen)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="DisplayManager-__init__"><strong>__init__</strong></a>(this, screen)</dt><dd><tt>Defines:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;this.stack,&nbsp;a&nbsp;list&nbsp;that&nbsp;will&nbsp;hold&nbsp;menu&nbsp;objects&nbsp;to&nbsp;represent&nbsp;the&nbsp;menu&nbsp;stack.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;this.currentStack,&nbsp;it&nbsp;represents&nbsp;the&nbsp;current&nbsp;menu&nbsp;in&nbsp;the&nbsp;stack.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;this.screen,&nbsp;this&nbsp;is&nbsp;curses.screen&nbsp;<a href="builtins.html#object">object</a>&nbsp;used&nbsp;to&nbsp;display&nbsp;on&nbsp;the&nbsp;command&nbsp;line.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Assigns&nbsp;screen&nbsp;to&nbsp;this.screen</tt></dd></dl>
+
+<dl><dt><a name="DisplayManager-getStack"><strong>getStack</strong></a>(this)</dt><dd><tt>Returns&nbsp;the&nbsp;stack&nbsp;where&nbsp;all&nbsp;the&nbsp;names&nbsp;of&nbsp;the&nbsp;menus&nbsp;are&nbsp;stringed&nbsp;together.<br>
+If&nbsp;the&nbsp;string&nbsp;is&nbsp;larger&nbsp;than&nbsp;90&nbsp;characters,&nbsp;then&nbsp;the&nbsp;last&nbsp;90&nbsp;characters&nbsp;are&nbsp;showed&nbsp;only.</tt></dd></dl>
+
+<dl><dt><a name="DisplayManager-handleKeyboard"><strong>handleKeyboard</strong></a>(this)</dt><dd><tt>Returns&nbsp;the&nbsp;keycode&nbsp;of&nbsp;the&nbsp;pressed&nbsp;key.<br>
+Returns&nbsp;-1&nbsp;if&nbsp;no&nbsp;key&nbsp;was&nbsp;pressed&nbsp;in&nbsp;this&nbsp;frame.</tt></dd></dl>
+
+<dl><dt><a name="DisplayManager-show"><strong>show</strong></a>(this)</dt><dd><tt>Displays&nbsp;the&nbsp;Stack&nbsp;on&nbsp;the&nbsp;screen&nbsp;in&nbsp;the&nbsp;first&nbsp;row.<br>
+Displays&nbsp;the&nbsp;current&nbsp;time&nbsp;on&nbsp;the&nbsp;screen&nbsp;in&nbsp;the&nbsp;first&nbsp;row.<br>
+Calls&nbsp;currentStack.<a href="#DisplayManager-show">show</a>(screen)</tt></dd></dl>
+
+<dl><dt><a name="DisplayManager-update"><strong>update</strong></a>(this)</dt><dd><tt>Calls&nbsp;this.<a href="#DisplayManager-handleKeyboard">handleKeyboard</a>()<br>
+Calls&nbsp;currentStack.<a href="#DisplayManager-update">update</a>(character)<br>
+Calls&nbsp;this.<a href="#DisplayManager-show">show</a>()</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>singleton</strong> = None</td></tr></table>
+</body></html>
